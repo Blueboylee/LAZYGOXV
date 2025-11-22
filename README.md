@@ -141,6 +141,8 @@ cd backend
 mvn spring-boot:run
 ```
 
+> 🔐 **数据库凭证**：在 `backend/.env.local` 中设置 `SPRING_DATASOURCE_PASSWORD=vtRl1PUImpGH7ttt`（或运行前在终端中 `export SPRING_DATASOURCE_PASSWORD=vtRl1PUImpGH7ttt`）。该文件已在 `.gitignore` 中忽略，请勿提交到版本库。
+
 后端将在 `http://localhost:8080` 启动。
 
 #### 2. 启动前端
@@ -319,6 +321,32 @@ curl http://localhost:8080/api/hello
   "code": 200,
   "message": "success",
   "data": "Hello from LAZYGOXV Backend! 🚀",
+  "timestamp": 1763807966178
+}
+```
+
+#### 3. Testing 表数据
+
+**POST** `/api/testing/list`
+
+无请求体，直接返回 PostgreSQL 中 `Testing` 表的全部记录（字段：`id`, `created_at`）。
+
+**请求示例**:
+```bash
+curl -X POST http://localhost:8080/api/testing/list
+```
+
+**响应示例**:
+```json
+{
+  "code": 200,
+  "message": "success",
+  "data": [
+    {
+      "id": 1,
+      "createdAt": "2025-11-22T15:33:12.345678+10:00"
+    }
+  ],
   "timestamp": 1763807966178
 }
 ```

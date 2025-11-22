@@ -58,6 +58,12 @@ frontend/.vite/
 frontend/.cache/
 
 # 环境变量文件
+backend/.env
+backend/.env.local
+backend/.env.development.local
+backend/.env.test.local
+backend/.env.production.local
+backend/.env*.local
 frontend/.env
 frontend/.env.local
 frontend/.env.development.local

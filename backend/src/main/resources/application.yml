@@ -4,6 +4,16 @@ server:
 spring:
   application:
     name: lazygoxv-backend
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://aws-1-ap-southeast-2.pooler.supabase.com:6543/postgres}
+    username: ${SPRING_DATASOURCE_USERNAME:postgres.hxmpjjwpmyodkhycagyx}
+    password: ${SPRING_DATASOURCE_PASSWORD:}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      pool-name: lazygoxv-pool
+      maximum-pool-size: 5
+      minimum-idle: 1
+      connection-timeout: 30000
   
   # 开发环境配置
   devtools:

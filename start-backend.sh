@@ -3,7 +3,18 @@
 echo "🚀 正在启动后端服务..."
 echo "================================"
 
-cd backend
+ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
+ENV_FILE="$ROOT_DIR/backend/.env.local"
+
+if [ -f "$ENV_FILE" ]; then
+    echo "🔐 加载环境变量: backend/.env.local"
+    set -o allexport
+    # shellcheck disable=SC1090
+    source "$ENV_FILE"
+    set +o allexport
+fi
+
+cd "$ROOT_DIR/backend"
 
 # 检查 Maven 是否安装
 if ! command -v mvn &> /dev/null
