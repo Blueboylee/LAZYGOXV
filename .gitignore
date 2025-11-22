@@ -1,0 +1,205 @@
+# ============================================
+# 后端 - Spring Boot / Maven
+# ============================================
+backend/target/
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/.mvn/wrapper/maven-wrapper.properties
+
+# Maven
+# backend/.m2/
+
+# Spring Boot
+backend/*.jar
+backend/*.war
+backend/*.ear
+backend/*.class
+
+# IDE - IntelliJ IDEA
+backend/.idea/
+backend/*.iml
+backend/*.iws
+backend/*.ipr
+backend/out/
+backend/.idea_modules/
+
+# IDE - Eclipse
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/.metadata/
+backend/bin/
+backend/tmp/
+backend/*.tmp
+backend/*.bak
+backend/*.swp
+backend/*~.nib
+backend/local.properties
+backend/.loadpath
+backend/.externalToolBuilders/
+
+# IDE - NetBeans
+backend/nbproject/private/
+backend/build/
+backend/nbbuild/
+backend/dist/
+backend/nbdist/
+backend/.nb-gradle/
+
+# ============================================
+# 前端 - React / Node.js
+# ============================================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+frontend/.cache/
+
+# 环境变量文件
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/.env*.local
+
+# 日志文件
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+frontend/.pnpm-debug.log*
+
+# 测试覆盖率
+frontend/coverage/
+frontend/.nyc_output/
+
+# 编辑器目录和文件
+frontend/.vscode/*
+!frontend/.vscode/extensions.json
+!frontend/.vscode/settings.json
+frontend/.idea/
+frontend/.DS_Store
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?
+
+# ============================================
+# IDE 通用配置
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# 操作系统文件
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# 日志和临时文件
+# ============================================
+*.log
+*.log.*
+logs/
+*.pid
+*.seed
+*.pid.lock
+*.tmp
+*.temp
+*.cache
+
+# ============================================
+# 数据库文件
+# ============================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# ============================================
+# 配置文件（包含敏感信息）
+# ============================================
+# 注意：如果配置文件包含敏感信息，请添加到此处
+# backend/src/main/resources/application-prod.yml
+# frontend/.env.production
+
+# ============================================
+# 构建产物
+# ============================================
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# ============================================
+# 其他
+# ============================================
+# 备份文件
+*.bak
+*.backup
+*.old
+
+# 压缩文件（如果不需要版本控制）
+# *.zip
+# *.tar.gz
+
+# 本地开发配置
+local/
+local.*
+*.local
