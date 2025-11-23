@@ -168,7 +168,8 @@ npm run dev
 2. **测试后端 API**: 
    - 健康检查: http://localhost:8080/api/health
    - 问候消息: http://localhost:8080/api/hello
-3. **使用 Postman**: 导入 API 端点进行测试（详见 [API 文档](#api-文档)）
+3. **体验登录 UI**: http://localhost:5173/login
+4. **使用 Postman**: 导入 API 端点进行测试（详见 [API 文档](#api-文档)）
 
 ## 💻 开发指南
 
@@ -221,6 +222,7 @@ spring:
 #### 项目结构
 
 - **components/** - React 组件（待扩展）
+- **pages/** - 路由页面（如 LoginPage、DashboardPage）
 - **services/** - API 服务封装
 - **App.tsx** - 主应用组件
 
@@ -251,6 +253,19 @@ const data = await fetchHealth();
 ```
 
 #### 样式开发
+- **路由**: 使用 `react-router-dom` 管理路由。例如在 `App.tsx` 中新增页面：
+
+```tsx
+import { Route, Routes } from 'react-router-dom'
+import SettingsPage from './pages/SettingsPage'
+
+<Routes>
+  <Route path="/" element={<DashboardPage />} />
+  <Route path="/login" element={<LoginPage />} />
+  <Route path="/settings" element={<SettingsPage />} />
+</Routes>
+```
+
 
 - 全局样式: `src/index.css`
 - 组件样式: `src/App.css` 或使用 CSS Modules
